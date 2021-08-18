@@ -1,0 +1,63 @@
+body{
+    padding: 1em;
+    background-color: #cfc6ca;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+
+
+.lbl{
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}
+
+.lbl::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #eee;
+    border-radius: 100px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .2s;
+
+}
+
+#switch:checked + .lbl::after{
+    left: 35px;
+}
+
+#switch:checked + .lbl{
+    background: lightskyblue;
+}
+
+#switch{
+    display: none;
+}
+
+#cuotas{
+    display: none;
+}
